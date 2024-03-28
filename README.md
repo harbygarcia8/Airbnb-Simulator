@@ -31,4 +31,9 @@ export default {
 
 # Airbnb-Simulator
 
-
+npm create vite@latest
+react-redux
+@reduxjs/toolkit
+npm install axios
+npm install react-bootstrap bootstrap
+npm add -D sass
