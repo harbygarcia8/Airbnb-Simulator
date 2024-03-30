@@ -1,0 +1,31 @@
+@use "_global" as gs;
+@import "font";
+
+.img {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+}
+
+.profile-menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  color: gs.$neutral03;
+  border: 1px solid gs.$neutral03;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.profile-menu-flex {
+  position: fixed;
+  top: 0.5rem;
+  right: 1.5rem;
+}
+
+.menu-items {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.8rem;
+  color: gs.$neutral03;
+}

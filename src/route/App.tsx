@@ -1,24 +1,24 @@
-import store from '../redux/store';
-import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AirbnbPage from '../pages/AirbnbPage';
-import "../styles/App.scss"
-function App() {
+import store from "../redux/store";
+import { lazy, Suspense } from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "../styles/App.scss";
 
+const AirbnbPage = lazy(() => import("../pages/AirbnbPage"));
+
+function App() {
   return (
-    <React.StrictMode>
+    <Suspense fallback={<div className="spinner-border text-primary" role="status"></div>}>
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<AirbnbPage />} />
+            <Route path="/" element={<AirbnbPage />} />
+            <Route path="*" element={<div>NOT FOUND 404</div>} />
           </Routes>
         </BrowserRouter>
-
       </Provider>
-    </React.StrictMode>
-    
-  )
+    </Suspense>
+  );
 }
 
-export default App
+export default App;

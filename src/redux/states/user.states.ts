@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { User } from "../../models/user.model";
+import { User } from "../../models";
+
 
 export const UserMEmptyState : User = {
-    name: '',
-    gender: '',
-    status: ''
+    id: 1,
+    name: 'Harby García',
 }
 
 export const userSlice = createSlice({
