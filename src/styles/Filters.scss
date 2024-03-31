@@ -1,0 +1,84 @@
+@use "_global" as gs;
+@import "font";
+
+.section-filter {
+  display: flex;
+  // border: 2px solid red;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.filter-div {
+    border-top: 1px solid gs.$neutral03;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    width: 78%;
+  }
+
+.filter-bar {
+  display: inline;
+  border: 2px solid gs.$neutral03 !important;
+  padding: 0.5rem;
+  border-radius: 1rem !important;
+
+  color: gs.$black !important;
+  background-color: gs.$white !important;
+}
+
+.filter-bar:hover {
+  border: 1px solid gs.$black !important;
+  background-color: gs.$neutral01 !important;
+}
+
+.filter-bar div { 
+  text-align: center;
+  margin: auto;
+  padding: 11px;
+  box-sizing: border-box;
+}
+
+
+  
+  .links-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    opacity: 0.5;
+    border-bottom: 1px solid gs.$white;
+    min-width: 85px;
+  }
+  
+  .links-box:hover,
+  .selected-box {
+    opacity: 1;
+    border-bottom: 1px solid gs.$black;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .links-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+  }
+  
+  .links-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: gs.$primary-unselected;
+  }
+  
+  .selected-label {
+    color: gs.$black;
+  }
+  @media only screen and (max-width: 800px) {
+    .filter-div {
+      padding: 0.5rem;
+      padding-top: 1.5rem;
+    }
+  }
+  

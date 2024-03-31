@@ -1,12 +1,10 @@
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import RestoreIcon from "@mui/icons-material/Restore";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useState } from "react";
+import { Person2Outlined, FavoriteIcon , RestoreIcon} from "@mui/icons-material";
 
 export default function SimpleBottomNavigation() {
-  const [value, setValue] = useState(0)
+  const [value, setValue] = useState<number>(0)
 
   return (
     <div className="bottom-nav">
@@ -17,9 +15,9 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+        <BottomNavigationAction label="Recientes" icon={<RestoreIcon />} />
+        <BottomNavigationAction label="Favoritos" icon={<FavoriteIcon />} />
+        <BottomNavigationAction label="IniciarSesion" icon={<Person2Outlined />} />
       </BottomNavigation>
     </div>
   );

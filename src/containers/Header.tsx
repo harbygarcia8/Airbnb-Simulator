@@ -11,7 +11,7 @@ function Header() {
     <div className="navbar">
       <img src={logo} alt="logo" className="navbar-logo" />
       <div className="search-bar">
-        <div className="search-bar-text">Donde</div>
+        <div className="search-bar-text">Dónde</div>
         <div className="search-bar-text">Llegada</div>
         <div className="search-bar-text">Salida</div>
         <div className="search-bar-text2">Quién</div>

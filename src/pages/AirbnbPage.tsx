@@ -1,17 +1,15 @@
-import { useState } from "react";
-import Header from "../containts/Header";
-import Filter from "../containts/Filter";
+import React from "react";
+import Header from "../containers/Header";
+import Filter from "../containers/Filter";
+// import PlaceAirbnb from "../containers/PlaceAirbnb";
+
 function AirbnbPage() {
-  const [selectedFilter, setSelectedFilter] = useState(0);
+
   return (
-    <>
+    <React.Fragment>
       <Header />
-      <hr color="#EBEBEB" />
-      <Filter
-        selectedFilter={selectedFilter}
-        setSelectedFilter={setSelectedFilter}
-      />
-    </>
+      <Filter />
+    </React.Fragment>
   );
 }
 
