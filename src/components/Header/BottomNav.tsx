@@ -1,7 +1,9 @@
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import { useState } from "react";
-import { Person2Outlined, FavoriteIcon , RestoreIcon} from "@mui/icons-material";
+import RestoreIcon from "@mui/icons-material/Restore";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { Person2Outlined } from "@mui/icons-material";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = useState<number>(0)
