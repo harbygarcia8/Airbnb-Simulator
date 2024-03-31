@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 
 function Filter() {
   const [icons, setIcons] = useState<Array<LinksIcons>>([]);
-  const [selectedIcon, setSelectedIcon] = useState<number>(0);
+  const [selectedIcon, setSelectedIcon] = useState("");
 
   useEffect(() => {
     setIcons(INITIAL_ICONS);
@@ -25,13 +25,13 @@ function Filter() {
               setSelectedIcon(item.id);
             }}
           >
-            <img src={item.imgSrc} alt={item.label} className="links-img" />
+            <img src={item.image} alt={item.title} className="links-img" />
             <p
               className={`links-label ${
                 item.id === selectedIcon && "selected-label"
               }`}
             >
-              {item.label}
+              {item.title}
             </p>
           </div>
         ))}

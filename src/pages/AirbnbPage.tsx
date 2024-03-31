@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../containers/Header";
 import Filter from "../containers/Filter";
-// import PlaceAirbnb from "../containers/PlaceAirbnb";
+import PlaceAirbnb from "../containers/PlaceAirbnb";
 
 function AirbnbPage() {
 
@@ -9,6 +9,7 @@ function AirbnbPage() {
     <React.Fragment>
       <Header />
       <Filter />
+      <PlaceAirbnb />
     </React.Fragment>
   );
 }
