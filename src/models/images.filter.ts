@@ -236,11 +236,11 @@ export interface pictureByCategory {
 export const IMAGE_BY_CATEGORY = [
   {
     id: "1132231851",
-    rating: "string",
-    desc: "string",
-    price: "string",
-    date: "string",
-    title: "string",
+    rating: "3",
+    desc: "Casa en la nieve",
+    price: "250 usd",
+    date: "25-dic",
+    title: "CABAÑA en la nieve",
     picture:
       "https://a0.muscache.com/im/pictures/miso/Hosting-46695796/original/a0965aa5-3907-466e-b727-0900e2a7e8c7.jpeg?im_w=720",
   },
