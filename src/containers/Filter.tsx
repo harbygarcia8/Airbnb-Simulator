@@ -1,6 +1,6 @@
 import "../styles/Filters.scss";
 import { INITIAL_ICONS, LinksIcons } from "../models/icons.filter";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { TuneSharp } from "@mui/icons-material";
 import { Button } from "@mui/material";
 

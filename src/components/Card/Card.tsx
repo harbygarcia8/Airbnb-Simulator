@@ -8,7 +8,19 @@ import { StarRateRounded } from "@mui/icons-material";
 import React, { useState } from "react";
 import { Box, Button, Modal } from "@mui/material";
 
-function Card({ card }) {
+interface CardProps {
+  card: {
+    id: string;
+    picture: string;
+    rating: string;
+    desc: string;
+    price: string;
+    date: string;
+    title: string;
+  };
+}
+
+function Card({ card }: CardProps) {
 
   const [open, setOpen] = useState<boolean>(false);
   const handleOpen = () => {
@@ -71,7 +83,7 @@ function Card({ card }) {
 }
 
 const style = {
-  position: 'absolute' as 'absolute',
+  position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
