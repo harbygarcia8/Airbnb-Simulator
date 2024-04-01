@@ -1,0 +1,18 @@
+@use "_global" as gs;
+@import "font";
+
+:root {
+  --black: #000;
+  --grey: #ddd;
+  --font-grey: #717171;
+  --white: #ffffff;
+  --theme: #ff385c;
+  --light-grey: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  font-family: "Cereal-light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
